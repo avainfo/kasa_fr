@@ -1,0 +1,37 @@
+.background {
+  display: block;
+  width: calc(100vw - 200px);
+  height: 223px;
+  margin: 50px 100px 0 100px;
+  z-index: 2;
+
+  img {
+    position: relative;
+    z-index: 1;
+    width: calc(100vw - 200px);
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .text {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.60);
+    top: 138px;
+    left: 100px;
+    width: calc(100vw - 200px);
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 68.45px;
+    font: {
+      family: Montserrat;
+      weight: 700;
+      size: 48px;
+    };
+  }
+}
