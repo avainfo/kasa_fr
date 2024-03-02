@@ -1,19 +1,19 @@
 .gallery {
   width: calc(100vw - 300px);
-  height: calc(340px * 2 + 149px);
   background-color: #F6F6F6;
   border-radius: 25px;
   column-gap: 60px;
   row-gap: 50px;
   margin: {
-    top: 43px;
+    top: 50px;
     left: 100px;
     right: 100px;
   }
   padding: {
-    top: 56px;
+    top: 50px;
     left: 50px;
     right: 50px;
+    bottom: 50px;
   };
   display: flex;
   flex-wrap: wrap;
