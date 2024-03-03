@@ -1,7 +1,7 @@
 .background {
   display: block;
   width: calc(100vw - 200px);
-  height: 223px;
+  height: 10vw;
   margin: 50px 100px 0 100px;
   z-index: 2;
 
@@ -9,20 +9,20 @@
     position: relative;
     z-index: 1;
     width: calc(100vw - 200px);
-    height: 223px;
+    height: 10vw;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 1.5vw;
   }
 
   .text {
-    position: absolute;
+    position: relative;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.60);
-    top: 138px;
-    left: 100px;
+    top: calc(-10vw - 4px);
+    left: 0;
     width: calc(100vw - 200px);
-    height: 223px;
-    border-radius: 25px;
+    height: 10vw;
+    border-radius: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
