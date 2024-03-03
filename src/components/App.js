@@ -3,6 +3,7 @@ import Header from "./Header";
 import TopSection from "./TopSection";
 import Gallery from "./Gallery";
 import background from "../assets/background.png"
+import Footer from "./Footer";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Header/>
             <TopSection background={background} text={"Chez vous, partout et ailleurs"}/>
             <Gallery/>
+            <Footer/>
         </div>
     );
 }

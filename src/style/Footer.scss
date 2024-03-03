@@ -1,0 +1,32 @@
+.footer {
+  background-color: black;
+  width: 100vw;
+  padding: {
+    top: 60px;
+    bottom: 30px;
+  };
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+
+  :nth-child(1) {
+    filter: grayscale(100%) brightness(100);
+    width: 8.5vw;
+  }
+
+  :nth-child(2) {
+    font: {
+      family: Montserrat, sans-serif;
+      size: 1.5vw;
+      weight: 500;
+    }
+    line-height: 34px;
+    letter-spacing: 0;
+    text-align: center;
+    color: white;
+  }
+
+}
