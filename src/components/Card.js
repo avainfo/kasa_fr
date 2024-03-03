@@ -1,11 +1,13 @@
 import "../style/Card.scss"
 
-function Card() {
-    return (
-        <div className={"cards"}>
-            <div className={"overlay"}></div>
-        </div>
-    );
+function Card({text}) {
+	return (
+		<div className={"cards"}>
+			<div className={"overlay"}>
+				<div>{text}</div>
+			</div>
+		</div>
+	);
 }
 
 export default Card;
