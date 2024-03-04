@@ -1,9 +1,6 @@
-import '../style/App.scss';
-import Header from "./Header";
-import TopSection from "./TopSection";
-import Gallery from "./Gallery";
-import background from "../assets/background.png"
-import Footer from "./Footer";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import DHome from "../pages/DHome";
+
 
 function App() {
     return (
@@ -14,6 +11,19 @@ function App() {
             <Footer/>
         </div>
     );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<DHome/>}>
+					<Route index element={<DHome/>}/>
+					<Route path="*" element={
+						//TODO: 404 Page
+						<></>
+					}/>
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;
