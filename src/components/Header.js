@@ -1,16 +1,16 @@
 import logo from "../assets/logo.png"
 import '../style/Header.scss'
 
-function Header() {
+function Header({id}) {
 	return (
 		<div className={"header"}>
 			<img src={logo ?? ""} alt="logo"/>
 			<ul>
-				<li data-underline={true}>
+				<li data-underline={id === 0}>
                     <a href={"/"}>Accueil</a>
                 </li>
-				<li data-underline={false}>
-                    <a href={"/"}>A Propos</a>
+				<li data-underline={id === 1}>
+                    <a href={"/about"}>A Propos</a>
                 </li>
 			</ul>
 		</div>

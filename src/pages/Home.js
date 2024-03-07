@@ -6,11 +6,11 @@ import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 import background from "../assets/background.png"
 
-class DHome extends Component {
+class Home extends Component {
 	render() {
 		return (
 			<div className={"main"}>
-				<Header/>
+				<Header id={0}/>
 				<TopSection background={background} text={"Chez vous, partout et ailleurs"}/>
 				<Gallery/>
 				<Footer/>
@@ -19,4 +19,4 @@ class DHome extends Component {
 	}
 }
 
-export default DHome;
+export default Home;

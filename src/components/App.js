@@ -1,28 +1,28 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import DHome from "../pages/DHome";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Home from "../pages/Home";
+import About from "../pages/About";
+
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Home/>,
+	},
+	{
+		path: "about",
+		element: <About/>,
+	},
+	//TODO: 404 Page
+	{
+		path: "*",
+		element: <div/>
+	}
+]);
 
 
 function App() {
-    return (
-        <div className={"main"}>
-            <Header/>
-            <TopSection background={background} text={"Chez vous, partout et ailleurs"}/>
-            <Gallery/>
-            <Footer/>
-        </div>
-    );
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<DHome/>}>
-					<Route index element={<DHome/>}/>
-					<Route path="*" element={
-						//TODO: 404 Page
-						<></>
-					}/>
-				</Route>
-			</Routes>
-		</BrowserRouter>
+		<RouterProvider router={router}/>
 	);
 }
 
