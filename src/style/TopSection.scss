@@ -1,7 +1,7 @@
 .background {
   display: block;
   width: calc(100vw - 200px);
-  height: 10vw;
+  height: 12vw;
   margin: 50px 100px 0 100px;
   z-index: 2;
 
@@ -9,7 +9,7 @@
     position: relative;
     z-index: 1;
     width: calc(100vw - 200px);
-    height: 10vw;
+    height: 12vw;
     object-fit: cover;
     border-radius: 1.5vw;
   }
@@ -17,11 +17,10 @@
   .text {
     position: relative;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.60);
-    top: calc(-10vw - 4px);
+    top: calc(-12vw - 4px);
     left: 0;
     width: calc(100vw - 200px);
-    height: 10vw;
+    height: 12vw;
     border-radius: 1.5vw;
     display: flex;
     justify-content: center;
@@ -33,5 +32,10 @@
       weight: 700;
       size: 48px;
     };
+    background-color: rgba(0, 0, 0, 0.30);
+
+    &.active {
+      background-color: rgba(0, 0, 0, 0.60);
+    }
   }
 }
