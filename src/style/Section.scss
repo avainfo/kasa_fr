@@ -1,22 +1,22 @@
 .section {
-  background: #F6F6F673;
   width: calc(100vw - 200px);
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 40px;
-  border-radius: 0.5vw;
+  border-radius: 0.7vw;
   transition-duration: 0.3s;
   cursor: pointer;
 
   > div:nth-child(1) {
+    position: relative;
+    z-index: 1;
     background-color: #FF6060;
-    border-radius: 0.5vw;
-    height: 4vh;
+    border-radius: 0.7vw;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 100px;
     padding: {
       left: 10px;
       right: 20px;

@@ -6,20 +6,33 @@ import Section from "../components/Section";
 import Footer from "../components/Footer";
 
 class About extends Component {
-	render() {
-		return (
-			<div className={"about"}>
-				<Header id={1}/>
-				<TopSection background={background}/>
-				<Section title={"Fiabilité"}/>
-				<Section title={"Respect"}/>
-				<Section title={"Service"}/>
-				<Section title={"Sécurité"}/>
-				<div style={{height: "50px"}}/>
-				<Footer/>
-			</div>
-		);
-	}
+    static loaded = false;
+
+    render() {
+        return (
+            <div className={"about"} onLoad={() => resize()}>
+                <Header id={1}/>
+                <TopSection background={background}/>
+                <Section title={"Fiabilité"}/>
+                <Section title={"Respect"}/>
+                <Section title={"Service"}/>
+                <Section title={"Sécurité"}/>
+                <div style={{height: "50px"}}/>
+                <Footer/>
+            </div>
+        );
+    }
+}
+
+function resize() {
+    if(!About.loaded) {
+        for(let element of document.getElementsByClassName("section")) {
+            element.style.height = element.children[1].clientHeight.toString() + "px";
+            console.log(element.height)
+        }
+    }
+
+    About.loaded = true;
 }
 
 export default About;
