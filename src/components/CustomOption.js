@@ -9,7 +9,7 @@ function CustomOption() {
             Espace de travail<br/>
             Fer à repasser<br/>
             Sèche-cheveux<br/>
-            Cintres<br/>
+            Cintres
         </div>
     )
 }
