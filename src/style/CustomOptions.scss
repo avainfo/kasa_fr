@@ -1,18 +1,12 @@
 .customOptions {
   position: relative;
   z-index: 0;
-  top: calc(-5vh - 20px);
   border-radius: 0.7vw;
-  background: /*#F6F6F673*/ red;
-  transition-duration: 0.3s;
-  padding:{
-    top: calc(5vh + 30px);
-    left: 20px;
-    right: 20px;
-    bottom: 10px;
-  }
+  background: #F6F6F673;
+  padding: 0;
+  max-height: 0;
   font: {
-    size: 1.4vw;
+    size: 1.0vw;
     family: "Montserrat";
     weight: 400;
   };

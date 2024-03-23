@@ -1,18 +1,21 @@
 .section {
-  width: calc(100vw - 200px);
-  margin-left: 100px;
-  margin-right: 100px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+  width: calc(100vw - 400px);
+  margin-left: 200px;
+  margin-right: 200px;
   margin-top: 40px;
   border-radius: 0.7vw;
   transition-duration: 0.3s;
   cursor: pointer;
   overflow: hidden;
+  background: #F6F6F673;
   > div:nth-child(1) {
     position: relative;
     z-index: 1;
     background-color: #FF6060;
     border-radius: 0.7vw;
-    height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,6 +26,7 @@
       top: 10px;
       bottom: 10px;
     };
+
     > img {
       transform: rotateY(180deg);
       transition-duration: 0.3s;
