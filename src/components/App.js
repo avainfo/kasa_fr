@@ -12,7 +12,6 @@ const router = createBrowserRouter([
 		path: "about",
 		element: <About/>,
 	},
-	//TODO: 404 Page
 	{
 		path: "*",
 		element: <div/>
