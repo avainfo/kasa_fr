@@ -27,8 +27,7 @@ class About extends Component {
 function resize() {
     if(!About.loaded) {
         for(let element of document.getElementsByClassName("section")) {
-            element.style.height = element.children[1].clientHeight.toString() + "px";
-            console.log(element.height)
+            element.style.height = "calc(5vh + 20px)";
         }
     }
 
