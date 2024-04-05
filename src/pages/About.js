@@ -4,6 +4,7 @@ import TopSection from "../components/TopSection";
 import background from "../assets/background2.png"
 import Section from "../components/Section";
 import Footer from "../components/Footer";
+import "../style/pages/Pages.scss"
 
 class About extends Component {
     static loaded = false;
