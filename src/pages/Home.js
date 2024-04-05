@@ -1,5 +1,5 @@
 import {Component} from "react";
-import '../style/App.scss';
+import '../style/pages/App.scss';
 import Header from "../components/Header";
 import TopSection from "../components/TopSection";
 import Gallery from "../components/Gallery";
