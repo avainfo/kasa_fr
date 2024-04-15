@@ -39,3 +39,35 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 500px) {
+  .background {
+    width: calc(100vw - 40px);
+    height: 130px;
+    margin: 25px 20px 0 20px;
+    border-radius: 2.5vw;
+
+    img {
+      width: calc(100vw - 40px);
+      height: 130px;
+      border-radius: 2.5vw;
+    }
+
+    .text {
+      width: calc(100vw - 80px);
+      height: 130px;
+      font: {
+        family: Montserrat;
+        weight: 600;
+        size: 28px;
+      };
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 120%;
+      text-align: left;
+      top: calc(-130px - 4px);
+      border-radius: 2.5vw;
+    }
+  }
+}
