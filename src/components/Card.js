@@ -1,8 +1,8 @@
 import "../style/Card.scss"
 
-function Card({text}) {
+function Card({text, img}) {
 	return (
-		<div className={"cards"}>
+		<div className={"cards"} style={{backgroundImage: `url(${img})`}}>
 			<div className={"overlay"}>
 				<div>{text}</div>
 			</div>

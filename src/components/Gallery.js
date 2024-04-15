@@ -1,17 +1,21 @@
 import Card from "./Card";
-import "../style/Gallery.scss"
+import "../style/Gallery.scss";
+import document from "../assets/logements.json"
 
 function Gallery() {
-    return (
-        <div className={"gallery"}>
-            <Card text={"Titre de la location"}/>
-            <Card text={"Titre de la location"}/>
-            <Card text={"Titre de la location"}/>
-            <Card text={"Titre de la location"}/>
-            <Card text={"Titre de la location"}/>
-            <Card text={"Titre de la location"}/>
-        </div>
-    );
+
+	let cards = [];
+
+	for(let documentKey of document) {
+		console.log(documentKey);
+		cards.push(<Card text={documentKey["title"]} img={documentKey["cover"]}/>)
+	}
+
+	return (
+		<div className={"gallery"}>
+			{cards}
+		</div>
+	);
 }
 
 export default Gallery;
