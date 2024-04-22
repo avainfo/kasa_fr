@@ -3,17 +3,15 @@ import "../style/Gallery.scss";
 import document from "../assets/logements.json"
 
 function Gallery() {
-
-	let cards = [];
-
-	for(let documentKey of document) {
-		console.log(documentKey);
-		cards.push(<Card text={documentKey["title"]} img={documentKey["cover"]}/>)
-	}
+	let index = 0;
 
 	return (
 		<div className={"gallery"}>
-			{cards}
+			{
+				document.map((documentKey) => (
+					<Card text={documentKey["title"]} img={documentKey["cover"]} key={index++}/>
+				))
+			}
 		</div>
 	);
 }
