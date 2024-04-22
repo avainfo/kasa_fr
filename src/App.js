@@ -1,7 +1,7 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import UnknownPage from "../pages/UnknownPage";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import UnknownPage from "./pages/UnknownPage";
 
 
 const router = createBrowserRouter([
