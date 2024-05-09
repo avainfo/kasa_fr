@@ -1,6 +1,8 @@
+$w: 100vw;
+
 .footer {
   background-color: black;
-  width: 100vw;
+  width: $w;
   padding: {
     top: 60px;
     bottom: 30px;
@@ -29,4 +31,19 @@
     color: white;
   }
 
+}
+
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    :nth-child(1) {
+      width: calc($w / 3);
+    }
+
+    :nth-child(2) {
+      width: calc($w / 3);
+      line-height: normal;
+      font-size: calc(($w / 3) / 13);
+    }
+  }
 }
