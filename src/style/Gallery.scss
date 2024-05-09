@@ -20,7 +20,48 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-start;
-  card {
+
+  .cards {
     background-color: #F6F6F6;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    width: calc(100vw - 40px);
+    background-color: white;
+    margin: {
+      left: 20px;
+      right: 20px;
+      top: 20px;
+      bottom: 20px;
+    };
+    padding: {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    };
+
+    column-gap: 0;
+    row-gap: 20px;
+
+    .cards {
+      width: calc(100vw - 40px);
+      height: calc(100vw - 40px);
+      flex-basis: initial;
+
+      .overlay {
+        width: auto;
+        bottom: 0;
+        position: relative;
+        height: calc(100vw - 40px);
+
+        > div {
+          font-size: calc((100vw - 40px) / 18);
+        }
+      }
+    }
   }
 }
