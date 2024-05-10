@@ -11,6 +11,7 @@
   cursor: pointer;
   overflow: hidden;
   background: #F6F6F673;
+
   > div:nth-child(1) {
     position: relative;
     z-index: 1;
@@ -43,6 +44,28 @@
       letter-spacing: 0;
       text-align: left;
       color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section {
+    width: calc(100vw - 40px);
+    margin: {
+      left: 20px;
+    };
+
+    > div:nth-child(1) {
+      border-radius: 10px;
+      height: 4vh;
+
+      > div {
+        font-size: calc(100vw / 25);
+      }
+    }
+    .customOptions {
+      font-size: calc(100vw / 30);
+      line-height: 2.5vh;
     }
   }
 }
