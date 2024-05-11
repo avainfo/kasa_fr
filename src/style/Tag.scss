@@ -1,0 +1,18 @@
+.tags {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+
+  div {
+    background-color: #FF6060;
+    height: 25px;
+    width: fit-content;
+    padding: 2px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    line-height: unset;
+  }
+}
