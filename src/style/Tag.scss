@@ -29,3 +29,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .tags {
+    > div {
+      width: 74px;
+      max-width: 74px;
+      border-radius: 7px;
+
+      > div {
+        font-size: 12px;
+      }
+    }
+
+  }
+}
