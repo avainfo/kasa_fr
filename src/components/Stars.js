@@ -1,5 +1,6 @@
 import starActive from "../assets/star-active.svg";
 import starInactive from "../assets/star-inactive.svg";
+import "../style/Stars.scss"
 
 function Stars({rating}) {
 
