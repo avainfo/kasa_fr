@@ -7,12 +7,14 @@ import Tag from "../components/Tag";
 import Stars from "../components/Stars";
 import SemiSection from "../components/SemiSection";
 import Footer from "../components/Footer";
+import {useLocation, useParams} from "react-router-dom";
 
 class ResidentialInfo extends Component {
 
 	constructor(props) {
 		super(props);
-		this.res = document[this.props.id];
+		this.id = window.location.pathname.split("/")[2]
+		this.res = document[this.id];
 	}
 
 	render() {

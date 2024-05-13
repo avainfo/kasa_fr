@@ -5,9 +5,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    margin-left: 100px;
 
     .leftInfos {
-      margin-left: 100px;
       width: calc(100vw - 200px);
       max-width: 65%;
 
@@ -35,7 +35,8 @@
       margin-right: 100px;
       display: flex;
       flex-direction: column;
-      align-items: end;justify-content: space-between;
+      align-items: end;
+      justify-content: space-between;
 
       .host {
         display: flex;
@@ -58,6 +59,7 @@
           margin-left: 10px;
         }
       }
+
       .stars {
         margin-top: 10px;
       }
@@ -75,5 +77,74 @@
       top: 30px;
       bottom: 50px;
     };
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .residentialInfo {
+    .carousel {
+      margin: {
+        left: 20px;
+        top: 25px;
+      };
+      width: calc(100vw - 40px);
+      height: calc(100vh / 3.3);
+      border-radius: 15px;
+    }
+
+    .infos {
+      margin: {
+        left: 20px;
+        top: 25px;
+      };
+      flex-direction: column;
+      align-items: unset;
+
+      .leftInfos {
+        max-width: unset;
+        width: calc(100vw - 40px);
+
+        .title {
+          line-height: unset;
+          font-size: 20px;
+          font-family: Montserrat, serif;
+          font-weight: 500;
+          text-align: left;
+        }
+
+        .loc {
+          line-height: unset;
+          font-size: 16px;
+          font-family: Montserrat, serif;
+          font-weight: 600;
+          text-align: left;
+          color: black;
+          margin: 0;
+        }
+      }
+
+      .rightInfos {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 15px;
+
+        .host {
+          column-gap: 10px;
+          max-width: calc(100vw / 2.7);
+        }
+      }
+    }
+
+    .sections {
+      width: calc(100vw - 40px);
+      margin: {
+        left: 20px;
+        right: 20px;
+      }
+      flex-direction: column;
+      row-gap: 20px;
+    }
   }
 }

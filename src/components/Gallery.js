@@ -9,7 +9,7 @@ function Gallery() {
 		<div className={"gallery"}>
 			{
 				document.map((documentKey) => (
-					<Card text={documentKey["title"]} img={documentKey["cover"]} key={index++}/>
+					<Card text={documentKey["title"]} img={documentKey["cover"]} key={index} id={index++}/>
 				))
 			}
 		</div>

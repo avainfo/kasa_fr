@@ -18,9 +18,8 @@
 
   .icon {
     position: absolute;
-    height: calc(100vh / 2.5 / 5);
-    // 2.5 / 2.5 => 6.25
-    top: calc(100vh / 6.25);
+    height: calc(25%);
+    top: calc(50% - 12.5%);
     cursor: pointer;
   }
 
@@ -44,4 +43,8 @@
     font-weight: normal;
     font-family: Montserrat, serif;
   }
+}
+
+@media only screen and (max-width: 500px) {
+
 }
