@@ -7,7 +7,6 @@ import Tag from "../components/Tag";
 import Stars from "../components/Stars";
 import SemiSection from "../components/SemiSection";
 import Footer from "../components/Footer";
-import {useLocation, useParams} from "react-router-dom";
 
 class ResidentialInfo extends Component {
 
@@ -15,6 +14,7 @@ class ResidentialInfo extends Component {
 		super(props);
 		this.id = window.location.pathname.split("/")[2]
 		this.res = document[this.id];
+		this.index = 0;
 	}
 
 	render() {
@@ -27,7 +27,7 @@ class ResidentialInfo extends Component {
 						<h1 className={"title"}>{this.res["title"]}</h1>
 						<h2 className={"loc"}>{this.res["location"]}</h2>
 						<div className={"tags"}>
-							{this.res["tags"].map((tag) => <Tag name={tag}/>)}
+							{this.res["tags"].map((tag) => <Tag name={tag} key={this.index++}/>)}
 						</div>
 					</div>
 					<div className={"rightInfos"}>
@@ -40,7 +40,7 @@ class ResidentialInfo extends Component {
 				</div>
 				<div className={"sections"}>
 					<SemiSection content={<div>{this.res["description"]}</div>} title={"Description"}/>
-					<SemiSection content={this.res["equipments"].map((e) => <div>{e}</div>)} title={"Équipements"}/>
+					<SemiSection content={this.res["equipments"].map((e) => <div key={this.index++}>{e}</div>)} title={"Équipements"}/>
 				</div>
 				<Footer/>
 			</div>
