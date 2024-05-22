@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 
 function Card({text, img, id}) {
 	return (
-		<Link className={"cards"} style={{backgroundImage: `url(${img})`}} to={
+		<Link className={"cards"} style={{backgroundImage: `url(${img})`, textDecoration: "none"}} to={
 			{
 				pathname: "info/" + id,
 				search: "?sort=name",
 				hash: "#the-hash",
-				state: { fromDashboard: true }
+				state: {fromDashboard: true}
 
 			}
 		}>
