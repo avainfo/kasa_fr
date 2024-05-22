@@ -18,7 +18,6 @@ function Carousel({img}) {
 	function update(side) {
 		if(index + side >= 0 && index + side < img.length) {
 			setIndex(index + side);
-			console.log(index);
 		}
 	}
 

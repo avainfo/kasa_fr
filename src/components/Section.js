@@ -8,7 +8,6 @@ function actionSection(event) {
         event.target.parentElement.parentElement.children[1].style.maxHeight = "0";
         event.target.style.rotate = "";
     } else {
-        console.log(event.target.parentElement.parentElement.children[1]);
         event.target.parentElement.parentElement.children[1].style.padding = "10px 20px";
         event.target.parentElement.parentElement.children[1].style.maxHeight = "fit-content";
         event.target.style.rotate = "-180deg";
