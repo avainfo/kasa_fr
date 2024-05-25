@@ -1,28 +1,32 @@
 import {Component} from "react";
 import Header from "../components/Header";
 import TopSection from "../components/TopSection";
-import background from "../assets/background2.png"
-import Section from "../components/Section";
 import Footer from "../components/Footer";
+import SemiSection from "../components/SemiSection";
+import background from "../assets/background2.png"
 import "../style/pages/Pages.scss"
+import "../style/pages/About.scss"
 
 class About extends Component {
-    static loaded = false;
+	static loaded = false;
 
-    render() {
-        return (
-            <div className={"about"}>
-                <Header id={1}/>
-                <TopSection background={background}/>
-                <Section title={"Fiabilité"} content={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."}/>
-                <Section title={"Respect"} content={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}/>
-                <Section title={"Service"} content={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}/>
-                <Section title={"Sécurité"} content={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}/>
-                <div style={{height: "50px"}}/>
-                <Footer/>
-            </div>
-        );
-    }
+	render() {
+		return (<div className={"about"}>
+			<Header id={1}/>
+			<TopSection background={background}/>
+			<div className={"sections"}>
+				<SemiSection title={"Fiabilité"}
+				             content={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."}/>
+				<SemiSection title={"Respect"}
+				             content={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}/>
+				<SemiSection title={"Service"}
+				             content={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}/>
+				<SemiSection title={"Sécurité"}
+				             content={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}/>
+			</div>
+			<Footer/>
+		</div>);
+	}
 }
 
 export default About;
