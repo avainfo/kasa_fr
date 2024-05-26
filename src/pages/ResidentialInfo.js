@@ -6,7 +6,7 @@ import Tag from "../components/Tag";
 import Stars from "../components/Stars";
 import SemiSection from "../components/SemiSection";
 import Footer from "../components/Footer";
-import {Navigate, redirect, useParams} from "react-router-dom";
+import {Navigate, useParams} from "react-router-dom";
 
 function ResidentialInfo() {
 	let {id} = useParams();
