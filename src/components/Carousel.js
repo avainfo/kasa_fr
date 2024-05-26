@@ -10,11 +10,12 @@ function Carousel({img}) {
 		<div className="carousel">
 			<img className="carousel-item" src={img[index]} alt=""/>
 			{img.length > 1 ? (<>
-				<img className="li icon" src={icon ?? ""} alt="icon" onClick={() => update(-1)}/>,
+				<img className="li icon" src={icon ?? ""} alt="icon" onClick={() => update(-1)}/>
 				<img className="ri icon" src={icon ?? ""} alt="icon" onClick={() => update(1)}/>
-				</>) : null}
+				<p>{index + 1}/{img.length}</p>
+			</>) : null}
 
-			<p>{index + 1}/{img.length}</p>
+
 		</div>
 	);
 
