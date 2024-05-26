@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel";
 import "../style/ResidentialInfo.scss"
 import Tag from "../components/Tag";
 import Stars from "../components/Stars";
-import SemiSection from "../components/SemiSection";
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import {Navigate, useParams} from "react-router-dom";
 
@@ -36,9 +36,9 @@ function ResidentialInfo() {
 				</div>
 			</div>
 			<div className={"sections"}>
-				<SemiSection content={<div>{res["description"]}</div>} title={"Description"}/>
-				<SemiSection content={res["equipments"].map((e) => <div key={index++}>{e}</div>)}
-				             title={"Équipements"}/>
+				<Collapse content={<div>{res["description"]}</div>} title={"Description"}/>
+				<Collapse content={res["equipments"].map((e) => <div key={index++}>{e}</div>)}
+				          title={"Équipements"}/>
 			</div>
 			<Footer/>
 		</div>);

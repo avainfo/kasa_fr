@@ -1,4 +1,4 @@
-import "../style/SemiSection.scss";
+import "../style/Collapse.scss";
 import icon from "../assets/down-icon.svg";
 
 function actionSection(event) {
@@ -17,7 +17,7 @@ function actionSection(event) {
 	}
 }
 
-function SemiSection({content, title}) {
+function Collapse({content, title}) {
 	return (
 		<div className={"semi-section-container"}>
 			<div className={"semi-section"}>
@@ -29,4 +29,4 @@ function SemiSection({content, title}) {
 	);
 }
 
-export default SemiSection;
+export default Collapse;
