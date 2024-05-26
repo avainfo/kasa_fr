@@ -32,7 +32,7 @@ function ResidentialInfo() {
 						<p>{res["host"]["name"]}</p>
 						<img src={res["host"]["picture"]} alt=""/>
 					</div>
-					<Stars rating={3}/>
+					<Stars rating={res["rating"]}/>
 				</div>
 			</div>
 			<div className={"sections"}>
