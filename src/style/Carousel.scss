@@ -1,5 +1,5 @@
 .carousel {
-  height: calc(100vh / 2.5);
+  height: 415px;
   width: calc(100vw - 200px);
   position: relative;
   border-radius: 25px;
@@ -18,8 +18,9 @@
 
   .icon {
     position: absolute;
-    height: calc(25%);
-    top: calc(50% - 12.5%);
+    height: 120px;
+    width: 96px;
+    top: calc(50% - 60px);
     cursor: pointer;
   }
 
@@ -46,5 +47,13 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .carousel {
+    height: 255px;
 
+    .icon {
+      height: 24px;
+      width: 24px;
+      top: calc(50% - 12px);
+    }
+  }
 }
