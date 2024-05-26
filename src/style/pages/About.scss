@@ -9,3 +9,15 @@
   flex-direction: column;
   row-gap: 30px;
 }
+
+
+@media only screen and (max-width: 500px) {
+  .sections {
+    margin: {
+      top: 35px;
+      bottom: 35px;
+      left: 20px;
+      right: 20px;
+    };
+  }
+}
